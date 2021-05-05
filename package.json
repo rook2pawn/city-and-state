@@ -1,0 +1,35 @@
+{
+  "name": "city-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "tape test/*.js | tap-spec",
+    "build": "browserify app.js -o dist/bundle.js",
+    "start": "http-server -o -c-1 -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rook2pawn/city-state.git"
+  },
+  "keywords": [
+    "javascript",
+    "city",
+    "state",
+    "towns",
+    "parse"
+  ],
+  "author": "David Wee <rook2pawn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rook2pawn/city-state/issues"
+  },
+  "homepage": "https://github.com/rook2pawn/city-state#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2"
+  }
+}

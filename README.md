@@ -15,3 +15,7 @@ const cityState = new CityState();
 cityState.getStates(); // get list of all states i.e. ['Alaska', ... ,'Wyoming']
 cityState.getCitiesOfState("Indiana"); // get list of all cities in Indiana
 ```
+
+# license
+
+isc/bsd

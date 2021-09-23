@@ -14,10 +14,10 @@ test("getCitiesOfState", function (t) {
 });
 
 test("verify small towns", function (t) {
-  t.plan(1);
+  t.plan(2);
   const indiana = cityState.getCitiesOfState("Indiana");
-  t.equal(
-    indiana.find((name) => name == "Clayton"),
-    "Clayton"
-  );
+  const { city, timezone } = indiana.find(({ city }) => city == "Clayton");
+
+  t.equal(city, "Clayton");
+  t.equal(timezone, "America/Indiana/Indianapolis");
 });
